@@ -20,17 +20,15 @@ const Header = () =>  {
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: '#fff', color: '#333', boxShadow: 1 }}>
-      <Toolbar sx={{ minHeight: '70px' }}>
-        <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
-          <Box sx={{ display: 'flex', alignItems: 'center', mr: 2 }}>
+    <AppBar sx={{ backgroundColor: '#FAF6F4', color:'#333', boxShadow: 0, mb:10 }}>
+      <Toolbar>
+        <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1, ml:4 }}>
             <img 
               src="/logo.png" 
               alt="Kyowa Kirin" 
               style={{ 
                 height: 45, 
-                width: 'auto',
-                marginRight: 8
+                width: 'auto'
               }} 
             />
             <Typography 
@@ -39,15 +37,13 @@ const Header = () =>  {
               sx={{ 
                 color: '#ff6b35', 
                 fontWeight: 'bold',
-                fontSize: '14px',
+                fontSize: '1.1rem',
                 letterSpacing: '0.5px'
               }}
             >
               HUB
             </Typography>
-          </Box>
         </Box>
-        
         {!isMobile && (
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 4 }}>
             <Button 
@@ -55,7 +51,7 @@ const Header = () =>  {
               sx={{ 
                 textTransform: 'none',
                 fontWeight: 500,
-                fontSize: '14px',
+                fontSize: '0.95rem',
                 color: '#333',
                 cursor: 'pointer'
               }}
@@ -67,29 +63,30 @@ const Header = () =>  {
               sx={{ 
                 textTransform: 'none',
                 fontWeight: 500,
-                fontSize: '14px',
-                color: '#333',
-                cursor: 'pointer'
+                fontSize: '0.95rem',
+                color: '#333'
               }}
             >
               Our Products
             </Button>
             <Paper 
               sx={{ 
+                ml: 25,
                 display: 'flex', 
                 alignItems: 'center', 
-                width: 280,
-                height: 40,
+                width: 200,
+                height: 30,
                 border: '1px solid #e0e0e0',
                 boxShadow: 'none',
-                backgroundColor: '#f9f9f9'
+                backgroundColor: '#f9f9f9',
+                borderRadius: 50
               }}
             >
               <InputBase
                 sx={{ 
                   ml: 2, 
                   flex: 1,
-                  fontSize: '14px'
+                  fontSize: '0.9rem'
                 }}
                 placeholder="Search"
                 inputProps={{ 'aria-label': 'search' }}
@@ -99,18 +96,17 @@ const Header = () =>  {
                 sx={{ p: '8px', mr: 1 }} 
                 aria-label="search"
               >
-                <SearchIcon sx={{ fontSize: '14px', color: '#666' }} />
+                <SearchIcon sx={{ fontSize: '1.2rem', color: '#666' }} />
               </IconButton>
             </Paper>
             <Button 
               color="inherit" 
-              startIcon={<AccountCircle sx={{ fontSize: '14px' }} />}
+              endIcon={<AccountCircle sx={{ fontSize: '1.4rem', ml:0 }} />}
               sx={{ 
                 textTransform: 'none',
                 fontWeight: 500,
-                fontSize: '14px',
-                color: '#333',
-                ml: 1
+                fontSize: '0.95rem',
+                color: '#333'
               }}
             >
               Mary
@@ -122,4 +118,4 @@ const Header = () =>  {
   );
 };
 
-export default Header;
+export default Header; 
