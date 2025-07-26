@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Container,
   Typography,
@@ -65,7 +64,7 @@ const Statistics = () => {
               }}>
                 <img 
                   src="/Image-space.png" 
-                  alt="Medical illustration showing person in wheelchair with medical technology" 
+                  alt="Medical technology" 
                   style={{ 
                     maxWidth: '100%', 
                     height: 'auto',
