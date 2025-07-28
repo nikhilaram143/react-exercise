@@ -5,7 +5,7 @@ import {
   Paper
 } from '@mui/material';
 
-const Statistics = () => {
+const StatisticsSection = () => {
   return (
     <Box sx={{ backgroundColor: '#f8f9fa', py: 6 }}>
       <Container maxWidth="lg">
@@ -35,7 +35,7 @@ const Statistics = () => {
                   color: '#ff6b35', 
                   fontWeight: 'bold', 
                   mb: 3,
-                  fontSize: { xs: '1.5rem', md: '2rem' },
+                  fontSize: { xs: '24px', md: '32px' },
                   lineHeight: 1.3
                 }}
               >
@@ -45,8 +45,7 @@ const Statistics = () => {
                 variant="body1" 
                 sx={{ 
                   lineHeight: 1.6,
-                  color: '#666',
-                  fontSize: { xs: '1rem', md: '1.1rem' }
+                  fontSize: { xs: '16px', md: '18px' }
                 }}
               >
                 This website is intended to help people understand (Disease Y) and improve awareness of the condition.
@@ -81,4 +80,4 @@ const Statistics = () => {
   );
 };
 
-export default Statistics; 
+export default StatisticsSection; 

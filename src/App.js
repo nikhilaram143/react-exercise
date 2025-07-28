@@ -5,8 +5,9 @@ import "slick-carousel/slick/slick-theme.css";
 import './App.css';
 import Header from './components/Header';
 import BannerSection from './components/BannerSection';
-import FeaturedTopics from './components/FeaturedTopics';
-import Statistics from './components/Statistics';
+import FeaturedTopicsSection from './components/FeaturedTopicsSection';
+import StatisticsSection from './components/StatisticsSection';
+import TherapyAreasSection from './components/TherapyAreasSection';
 
 function App() {
   const therapyAreasRef = useRef(null);
@@ -18,8 +19,9 @@ function App() {
     <Box sx={{ flexGrow: 1 }}>
       <Header />
       <BannerSection />
-      <FeaturedTopics onLearnMore={handleLearnMore} />
-      <Statistics />
+      <FeaturedTopicsSection onLearnMore={handleLearnMore} />
+      <StatisticsSection />
+      <TherapyAreasSection ref={therapyAreasRef} />
     </Box>
   );
 }

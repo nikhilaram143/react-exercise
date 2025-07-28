@@ -14,7 +14,7 @@ import {
 import Slider from 'react-slick';
 import {carouselData} from '../shared/data';
 
-const FeaturedTopics = ({ onLearnMore }) => {
+const FeaturedTopicsSection = ({ onLearnMore }) => {
   const sliderRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -103,15 +103,23 @@ const FeaturedTopics = ({ onLearnMore }) => {
                     <Box sx={{
                       width: 24,
                       height: 24,
+                       color: '#ff6b35', 
                       borderRadius: '50%',
                       backgroundColor: '#fff',
-                      border: '1px solid #ff6b35',
+                      border: '1px solid #000',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
                       mr: 1
                     }}>
-                      {item.icon}
+                       <img 
+                          src="/icon-2.png" 
+                          alt="Arrow right"
+                          style={{ 
+                            background: '#ff6b35',
+                             borderRadius: '50%'
+                          }}
+                        />
                     </Box>
                     <Typography
                       sx={{ 
@@ -182,4 +190,4 @@ const FeaturedTopics = ({ onLearnMore }) => {
   );
 };
 
-export default FeaturedTopics; 
+export default FeaturedTopicsSection; 

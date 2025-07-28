@@ -6,7 +6,7 @@ import {
 
 const BannerSection = () => {
   return (
-    <Container  sx={{ mt: 16, mb: 8, px: { xs: 2, md: 4 } }}>
+    <Container  sx={{ mb: 8, px: { xs: 2, md: 4 } }}>
       <Box sx={{ 
         display: 'flex', 
         flexDirection: { xs: 'column', md: 'row' },
@@ -28,19 +28,19 @@ const BannerSection = () => {
           >
             Driven by a commitment to life
           </Typography>
-          <Typography variant="body1" sx={{ mb: 3, color: '#555', fontSize: { xs: '1rem', md: '1.1rem' } }}>
+          <Typography variant="body1" sx={{ mb: 3, color: '#555', fontSize: { xs: '16px', md: '18px' } }}>
             Everything we do at Kyowa Kirin is driven by our mission to improve health, ease suffering and prolong life. 
             It's a mission that has guided our development and expansion for over 70 years.
           </Typography>
-          <Typography variant="body1" sx={{ mb: 3, color: '#555', fontSize: { xs: '1rem', md: '1.1rem' } }}>
+          <Typography variant="body1" sx={{ mb: 3, color: '#555', fontSize: { xs: '16px', md: '18px' } }}>
             As well as introducing and explaining the major products in our portfolio, this site contains a range of 
             materials to support healthcare professionals. These free online medical resources include overviews 
             of specific therapy areas, diagnostic materials and treatment guidelines.
           </Typography>
-          <Typography variant="body1" sx={{ mb: 3, color: '#555', fontSize: { xs: '1rem', md: '1.1rem' } }}>
+          <Typography variant="body1" sx={{ mb: 3, color: '#555', fontSize: { xs: '16px', md: '18px' } }}>
             We hope you find them of value as you continue to support and treat the patients under your care.
           </Typography>
-          <Typography variant="body2" sx={{ mb: 3, color: '#555', fontSize: { xs: '1rem', md: '1.1rem' } }}>
+          <Typography variant="body2" sx={{ mb: 3, color: '#555', fontSize: { xs: '16px', md: '18px' } }}>
             Simply register your details to gain full access to the site and all the information it contains.
           </Typography>
         </Box>
